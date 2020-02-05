@@ -48,8 +48,8 @@ function createHTMLElement(tagName, parentNode, innerText) {
 
 var body = document.querySelector('body')
 
-var ul = createHTMLElement('ul', body, "");
+var ol = createHTMLElement('ol', body, "");
 
 for (var numTags = 1; numTags <= 5; numTags++) {
-    createHTMLElement("li", ul, "hello")
+    createHTMLElement("li", ol, `${numTags} Hello`)
 }
